@@ -12,6 +12,11 @@ def input_to_index(user_input = "X")
   user_input.to_i - 1
   end
 
+def move(board, index, win = "X")
+          board[index] = win
+  end
+
+
 def position_taken? (board, index)
     if board[index] == "" || board[index] == " " || board[index] == nil
       return false
@@ -20,9 +25,6 @@ def position_taken? (board, index)
   end
 end
 
-def move(board, index, win = "X")
-        board[index] = win
-end
 
 def player(board)
 end
