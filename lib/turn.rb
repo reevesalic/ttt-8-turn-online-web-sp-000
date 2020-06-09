@@ -25,7 +25,7 @@ def valid_move?(board, index)
   else
     return false
   end
-end
+
 def move(board, index, win = "X")
         board[index] = win
 end
@@ -45,5 +45,5 @@ def turn(board)
     turn(board)
   end
 end
-
+end
 display_board(board)
