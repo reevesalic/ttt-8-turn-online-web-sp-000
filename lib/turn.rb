@@ -36,6 +36,7 @@ end
 display_board(board)
 
 def player(board)
+  turn_count(board) % 2 == 0? "X" : "O"
 end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
