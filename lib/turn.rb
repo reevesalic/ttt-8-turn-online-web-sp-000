@@ -60,6 +60,4 @@ def turn_count(board)
     end
   }
   counter
-  end
-
-display_board(board)
+end
