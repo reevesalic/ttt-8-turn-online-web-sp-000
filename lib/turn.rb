@@ -30,7 +30,7 @@ def move(board, index, win = "X")
         board[index] = win
   end
 def player(board)
-
+end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn(board)
