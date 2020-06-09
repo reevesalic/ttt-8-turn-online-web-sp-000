@@ -36,8 +36,6 @@ def valid_move?(board, index)
 end
 display_board(board)
 
-
-
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn(board)
   puts "Please enter 1-9:"
@@ -60,4 +58,5 @@ def turn_count(board)
     end
   }
   counter
+  end
 end
