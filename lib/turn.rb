@@ -8,6 +8,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
   end
 board = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   "]
+
 def input_to_index(user_input = "X")
   user_input.to_i - 1
   end
@@ -25,10 +26,6 @@ def position_taken? (board, index)
   end
 end
 
-
-def player(board)
-end
-
 def valid_move?(board, index)
   if !position_taken?(board, index) && (index).between?(0,8)
     return true
@@ -37,6 +34,9 @@ def valid_move?(board, index)
   end
 end
 display_board(board)
+
+def player(board)
+end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn(board)
